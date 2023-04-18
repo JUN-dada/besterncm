@@ -1,13 +1,13 @@
 <template>
-<div>
-  <div id="singbg" class=" relative overflow-hidden">
-    <div class="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+<div id="singbg" >
+  <div class=" relative overflow-hidden">
+    <div class="mx-auto px-2 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
       <!-- Product -->
       <div class="lg:grid lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
         <!-- Product image -->
         <div class="lg:col-span-4 lg:row-end-1">
-          <div class="h-96 overflow-hidden rounded-lg  overflow-hidden">
-            <img ref="singbg" :src="coverImgUrl"  class="object-cover w-full object-center songimgs">
+          <div class=" h-96 w-96 overflow-hidden rounded-lg  overflow-hidden">
+            <img ref="singbg" :src="coverImgUrl"  class=" w-full songimgs">
           </div>
         </div>
 
@@ -144,11 +144,8 @@ export default {
       const avgG = g / pixelCount;
       const avgB = b / pixelCount;
       document.getElementById('singbg').style.background = `rgb(${avgR + 60},${avgG + 60},${avgB + 60})`;
-      if (avgR > 200 && avgG > 200 && avgB > 200) {
-        document.getElementById('singbg').style.color = `rgb(255,255,255)`;
-      } else {
-        document.getElementById('singbg').style.color = `rgb(0,0,0)`;
-      }
+      document.getElementById('singbg').style.color = `rgb(${avgR - 60},${avgG - 60},${avgB - 60})`;
+
     }
     this.heartshow = localStorage.getItem('userplaylistid') === this.songspageid;
   }

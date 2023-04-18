@@ -1,24 +1,13 @@
-# allvuewyy
+网页加载太慢（重点）
 
-## Project setup
-```
-npm install
-```
+播放逻辑太反人类
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+首页弹窗刷新有bug
 
-### Compiles and minifies for production
-```
-npm run build
-```
+个人中心头像太抽象（哈哈哈哈）
 
-### Lints and fixes files
-```
-npm run lint
-```
+没有返回按钮
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+页面刷新会返回登陆页面然后又返回到主页
+
+排版问题

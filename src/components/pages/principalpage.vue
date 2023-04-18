@@ -197,19 +197,6 @@ export default {
         ease: "power4.out",
       });
     })
-    if (localStorage.getItem('ismassage') === 'true') {
-      this.$message({
-        message: '欢迎来到battterncm',
-        type: 'success'
-      });
-      localStorage.setItem('ismassage', false);
-    } else if (localStorage.getItem('ismassage') === 'false') {
-      this.$message({
-        message: '欢迎回来',
-        type: 'success'
-      });
-      localStorage.setItem('ismassage', false);
-    }
   }
 }
 </script>
